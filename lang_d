@@ -1,0 +1,12 @@
+*;T+ Language,create=("temp_memory_app.tplus")
+
+/Void Setup ((Loop)Start=beginn-$0.0mins)
+/Read{
+  *characters=(ch.png)
+  *avspace=(none,1GB,200MB,500MB,600GB,600MB,500GB,1TB,2TB,3TB,4TB,5TB,6TB,7TB,8TB,9TB,10TB,10GB,16GB,4GB,8GB,0.95GB)
+
+
+}
+
+
+Create=DDNUB,convert=c,342+7bY.85
