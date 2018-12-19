@@ -2,11 +2,25 @@
 
 /Void Setup ((Loop)Start=beginn-$0.0mins)
 /Read{
-  *characters=(ch.png)
-  *avspace=(none,1GB,200MB,500MB,600GB,600MB,500GB,1TB,2TB,3TB,4TB,5TB,6TB,7TB,8TB,9TB,10TB,10GB,16GB,4GB,8GB,0.95GB)
+  #characters=(init.bin)
+  #charset=(metainf.inf)
+  #program=(prog.start)
+  
+}
+/Decompiler{
+extract=prog.start - make[/._program] - del=///ZRAM/temp_memory_app.tplus
+read"app.start" - make[///ETC/APP/MEM/LOADER/DECOMPILER/GUID/TABLE/app.data]
+decompiler - app.start("
+------------------------
+&&&&&&&&&&&&&&&&&&&&&&&&--------
+&&&&&&&&&&&&&&&&&&&&&&&&--------
+&&&&&&&&&&&&&&&&&&&&&&&&--------
+&&&&&&&&&&&&&&&&&&&&&&&&--------
+------------------------
+")
 
-
+convert=&-TEXT
+convert=&-Arguments
 }
 
 
-Create=DDNUB,convert=c,342+7bY.85
